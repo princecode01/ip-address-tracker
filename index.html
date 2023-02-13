@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ip Address Tracker</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/favicon-32x32.png">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+        integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <section class="vh-100">
+        <div class="head">
+            <div class="container">
+                <div class="head-content">
+                    <div class="inner-content">
+                        <h2 class="my-4">Ip Address Tracker</h2>
+                        <div class="ip-input position-relative w-50 m-auto overflow-hidden">
+                            <input class="form-control p-2" type="text" id="ipInput"
+                                placeholder="Search for any IP address domain.">
+                            <div class="search-arrow position-absolute top-0 end-0">
+                                <img src="images/icon-arrow.svg" alt="search-arrow">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="map position-relative">
+            <div class="information w-100 translate-middle-y">
+                <div class="container bg-white">
+                    <div class="info-items d-flex justify-content-around">
+                        <div class="info-item">
+                            <p>IP ADDRESS</p>
+                            <h4></h4>
+                        </div>
+                        <div class="border"></div>
+                        <div class="info-item">
+                            <p>LOCATION</p>
+                            <h4></h4>
+                        </div>
+                        <div class="border"></div>
+                        <div class="info-item">
+                            <p>TIMEZONE</p>
+                            <h4></h4>
+                        </div>
+                        <div class="border"></div>
+                        <div class="info-item">
+                            <p>ISP</p>
+                            <h4></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="map"></div>
+        </div>
+    </section>
+
+
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+        integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

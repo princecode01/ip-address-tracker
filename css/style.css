@@ -1,0 +1,123 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+}
+
+.head {
+    background-image: url(../images/pattern-bg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 250px;
+    position: relative;
+}
+
+.head-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.inner-content {
+    flex-basis: 75%;
+    /* margin-bottom: 50px; */
+}
+
+.form-control,
+.form-control:focus {
+    border: 1px solid hsl(0, 0%, 17%);
+    outline: none;
+}
+
+.ip-input {
+    border-radius: 6px;
+}
+
+.search-arrow {
+    background-color: hsl(0, 0%, 17%);
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.information {
+    position: absolute;
+    z-index: 99999999999;
+}
+
+.border{
+    border: 4px solid hsl(0, 0%, 17%);
+
+}
+
+.information .container {
+    padding: 20px;
+    /* background-color: white; */
+    color: hsl(0, 0%, 59%);
+    border-radius: 7px;
+}
+
+.info-item {
+    text-align: center;
+}
+
+.info-item p {
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.info-item h4 {
+    color: hsl(0, 0%, 17%);
+    font-weight: 800;
+}
+
+#map {
+    height: calc(100vh - 250px);
+    background-color: aliceblue;
+}
+
+.leaflet-container {
+    background: #ddd;
+    outline: 0;
+}
+
+
+@media screen and (max-width:790px) {
+
+    .info-items {
+        flex-direction: column !important;
+    }
+
+    .info-item p {
+        font-size: 12px;
+        margin-bottom: 8px;
+    }
+
+    .container {
+        width: 90% !important;
+    }
+
+    .inner-content {
+        flex-basis: 100%;
+    }
+
+    .inner-content h2 {
+        margin: 12px 0px !important;
+    }
+
+    .inner-content .ip-input {
+        width: 100% !important;
+    }
+
+    .border{
+        display: none;
+    }
+
+}
